@@ -1,5 +1,6 @@
 import 'package:ai_app/constants/colors.dart';
 import 'package:ai_app/custom_widget/custom_text.dart';
+import 'package:ai_app/view/ai_chat/ai_chat.dart';
 import 'package:ai_app/view/home_screen/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -96,7 +97,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   ),
                   GestureDetector(
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => AiChat()));
                     },
                     child: Container(
                       width: 60..w,
